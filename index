@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sayang Surprise</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    h1 { color: #d6336c; }
+    img { border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+    button {
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: transform 0.3s;
+    }
+    button:hover { transform: scale(1.2); }
+  </style>
+</head>
+<body>
+  <h1>I am sorry sayang 😢❤️</h1>
+  <img src="yourphoto.jpg" alt="Our photo" width="300">
+  <p>Click Yes if you accept my sorry:</p>
+  <button onclick="alert('Yay! Thank you sayang ❤️')">Yes</button>
+  <button id="noBtn">No</button>
+
+  <script>
+    const noBtn = document.getElementById("noBtn");
+    noBtn.addEventListener("mouseover", () => {
+      const x = Math.floor(Math.random() * 200) - 100;
+      const y = Math.floor(Math.random() * 200) - 100;
+      noBtn.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  </script>
+</body>
+</html>
