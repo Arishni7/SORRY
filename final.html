@@ -25,6 +25,24 @@
       width: 80%;
       max-width: 200px;
     }
+    .options {
+      margin-top: 40px;
+    }
+    button {
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    button:hover {
+      transform: scale(1.2);
+      background-color: #d6336c;
+    }
   </style>
 </head>
 <body>
@@ -36,5 +54,13 @@
     <source src="VID_20260812_115459_1.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+  <!-- Punishment question -->
+  <div class="options">
+    <p>What punishment would you like to give me? 🤔</p>
+    <button onclick="alert('Okayyy I will do 20 push ups 💪')">20 Push Ups</button>
+    <button onclick="alert('I Love You ❤️ said 100 times!')">Say I Love You 100 times</button>
+    <button onclick="alert('Your wish is my command 😘')">Other (your wish)</button>
+  </div>
 </body>
 </html>
